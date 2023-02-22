@@ -9,13 +9,25 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="ShibaInu" src="../Models/SC-11/it.gltf"></a-asset-item>
+        <a-asset-item id="SC9" src="../Models/MODEL/Science/SC9/SC9_ver2.gltf"></a-asset-item>
+        <a-asset-item id="SC11" src="../Models/MODEL/Science/SC11/SC11_ver2.gltf"></a-asset-item>
+        <a-asset-item id="SC14" src="../Models/MODEL/Science/SC14/SC14.gltf"></a-asset-item>
+        <a-asset-item id="LLC" src="../Models/MODEL/Science/LLC/LLC.gltf"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="0 0.5 0 " position="0 -0.25 0" scale="0.07 0.07 0.07" src="#ShibaInu" animation-mixer>
+        <a-gltf-model rotation="0 0.5 0 " position="0 -0.25 0" scale="0.005 0.005 0.005" src="#SC9" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model rotation="0 0.5 0 " position="0 -0.25 0" scale="0.07 0.07 0.07" src="#SC11" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model rotation="0 0.5 0 " position="0 -0.25 0" scale="0.005 0.005 0.005" src="#SC14" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-gltf-model rotation="0 0.5 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#LLC" animation-mixer>
       </a-entity>
     </a-scene>
   </body>
