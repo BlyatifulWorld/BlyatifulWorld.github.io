@@ -4,3 +4,6 @@ body{
 .transparent{
     background: rgba(164, 206, 195, 0.4)
 }
+.transparentGreen{
+    background: rgba(121, 196, 119, 0.4)
+}
