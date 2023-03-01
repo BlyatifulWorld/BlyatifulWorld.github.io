@@ -7,58 +7,17 @@ body{
 .transparentGreen{
     background: rgba(121, 196, 119, 0.4)
 }
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-
-    .sidebar a {
-      float: left;
-    }
-
-    div.content {
-      margin-left: 0;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
