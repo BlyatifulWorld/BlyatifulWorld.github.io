@@ -1325,6 +1325,11 @@ video {
      object-fit: cover;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1413,6 +1418,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pl-4 {
@@ -1661,7 +1671,7 @@ video {
 
   font-weight: bolder;
 
-  src: url(../assets/fonts/VarelaRound-Regular.ttf);
+  src: url(/assets/fonts/Kanit-Regular.ttf);
 }
 
 html {
@@ -2230,11 +2240,6 @@ model-viewer {
     border-width: 1px;
   }
 
-  .sm\:object-center {
-    -o-object-position: center;
-       object-position: center;
-  }
-
   .sm\:p-6 {
     padding: 1.5rem;
   }
@@ -2347,6 +2352,11 @@ model-viewer {
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:object-right {
+    -o-object-position: right;
+       object-position: right;
   }
 
   .md\:p-5 {
